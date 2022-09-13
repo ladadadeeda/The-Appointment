@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Appointment Countdown</title>
+</head>
+<body>
+    
+    <div class="container">
+        <!-- Form input value -->
+        <div class="input-container" id="input-container">
+            <h1>Appointment</h1>
+            <form class="form" id="countdownForm">
+                <label for="">Title</label> 
+                <input type="text" class="title" id="title">
+                <label for="">Select your date</label>
+                <input  type="date" class="date-picker" id="date">
+                <button type="submit">Save</button>
+            </form>
+        </div>
+        <!-- Coutdown display -->
+        <div class="countdown" id="countdown" hidden >
+            <h1 id="countdown-title"></h1>
+            <ul>
+                <li><span></span>days</li>
+                <li><span></span>hours</li>
+                <li><span></span>minutes</li>
+                <li><span></span>seconds</li>
+            </ul>
+            <button id="countdown-button">Delete</button>
+        </div>
+        <!-- Alarm display -->
+        <div class="complete" id="complete" hidden>
+            <h1 class="complete-title">Alarm!</h1>
+            <h1 class="complete-info" id="complete-info"></h1>
+            <button class="complete-button" id="complete-button">Create new list</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- Use sweetalert2 for clean & formal alert  -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
