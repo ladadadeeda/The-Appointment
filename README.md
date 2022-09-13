@@ -7,6 +7,7 @@
 TODO : The Appointment Project
 
 I use the index.html for create a web page in 3 parts
+
 1.Appointment form :
   The Appointment form is required to input an appointment title & date
 for the date you can type or select by pick up in calendar.
